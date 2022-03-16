@@ -21,7 +21,7 @@ export const Navbar = () => {
   return (
     //map through the link ad display it in header
    
-   <div>
+   <div style={{display:"flex",justifyContent:"space-between",fontSize:"50px"}}>
      {
        links.map((e) => (
          <Link to={e.link}>{e.title}</Link>
