@@ -31,6 +31,9 @@ const handleFilter = (e)=>{
       <h2>Movies</h2>
       <select  onChange={handleFilter}>
         {/* map through the filter  */}
+        {genres.map((e)=>(
+          <option value="">{e}</option>
+        ))}
       </select>
       <div className = "movies-list">
          {data.map((e)=>(
